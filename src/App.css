@@ -1,5 +1,9 @@
-@import "tailwindcss";
+/* Core Tailwind v3 structural imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* Base HTML document layout defaults */
 html,
 body {
   margin: 0;
@@ -9,17 +13,35 @@ body {
   color: #f3f4f6;
 }
 
-@theme {
-  --animate-blink: blink 0.8s step-end infinite;
-  --animate-loading-bar: loading 0.8s ease infinite;
-
+/* Custom CSS utility utilities for your loading screen */
+@layer utilities {
+  /* Cursor blinking animation keyframes */
   @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
   }
 
+  /* Loading bar horizontal shifting animation keyframes */
   @keyframes loading {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(250%); }
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
+  }
+
+  /* Target animation assignment classes accessed by components */
+  .animate-blink {
+    animation: blink 0.8s step-end infinite;
+  }
+
+  .animate-loading-bar {
+    animation: loading 0.8s ease infinite;
   }
 }

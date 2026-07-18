@@ -1,5 +1,9 @@
-@import "tailwindcss";
+/* Core Tailwind v3 structural layer components */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* Global layout and application reset styles */
 html,
 body {
   margin: 0;
@@ -7,20 +11,4 @@ body {
   font-family: "Space Grotesk", sans-serif;
   background: #0a0a0a;
   color: #f3f4f6;
-}
-
-/* Tailwind v4 Configuration Block */
-@theme {
-  --animate-blink: blink 0.8s step-end infinite;
-  --animate-loading-bar: loading 0.8s ease infinite;
-
-  @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-  }
-
-  @keyframes loading {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(250%); }
-  }
 }
