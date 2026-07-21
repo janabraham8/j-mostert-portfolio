@@ -31,8 +31,8 @@ export const Contact = () => {
       id="contact"
       className="flex min-h-screen items-center justify-center py-20"
     >
-      <RevealOnScroll>
-        <div className="mx-auto w-full max-w-md px-4">
+      <div className="mx-auto w-full max-w-md px-4">
+        <RevealOnScroll>
           <h2 className="mb-8 bg-gradient-to-r from-blue-500 to-green-400 bg-clip-text text-center text-3xl font-bold text-transparent">
             Get In Touch
           </h2>
@@ -89,8 +89,8 @@ export const Contact = () => {
               Send Message
             </button>
           </form>
-        </div>
-      </RevealOnScroll>
+        </RevealOnScroll>
+      </div>
     </section>
   );
 };

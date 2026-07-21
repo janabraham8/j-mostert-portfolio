@@ -24,7 +24,7 @@ export const Projects = () => {
                 {["C#", "MySQL"].map((tech, key) => (
                   <span
                     key={key}
-                    className="rounded-full bg-blue-500/10 px-3 py-1 text-sm text-blue-500 transition hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]"
+                    className="rounded-full bg-green-500/15 px-3 py-1 text-sm text-green-500 transition hover:bg-green-500/20 hover:shadow-[0_0_15px_rgba(34,197,94,0.15)]"
                   >
                     {tech}
                   </span>
