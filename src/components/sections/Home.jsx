@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import resumePdf from "../../assets/J_Mostert_CV.pdf";
 
 export const Home = () => {
   return (
@@ -13,16 +14,19 @@ export const Home = () => {
           </h1>
           <p className="mx-auto mb-8 max-w-lg text-lg text-gray-400">
             Motivated and academically accomplished Information Technology
-            student with a strong foundation in software development,
-            problem-solving, and analytical thinking. Recognised for maintaining
-            a high academic standard and a commitment to continuous learning.
+            student with a strong foundation in software development and
+            problem-solving. Recognised for maintaining a high academic standard
+            and a commitment to continuous learning.
           </p>
           <div className="flex justify-center space-x-4">
             <a
-              href="#projects"
+              href={resumePdf}
+              download="J_Mostert_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="relative overflow-hidden rounded bg-blue-500 px-6 py-3 font-medium text-white transition hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
             >
-              View Projects
+              Download CV
             </a>
             <a
               href="#contact"
